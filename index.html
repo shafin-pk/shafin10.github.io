@@ -1,109 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Muhammed Shafin - Portfolio</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+      line-height: 1.6;
+      padding: 20px;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    section {
+      margin: 50px 0;
+      animation: fadeInUp 1s ease-in;
+    }
+
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 5px;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
 </head>
 <body>
 
-  <main>
-    <aside class="sidebar">
-      <div class="profile">
-        <img src="assets/images/profile.jpg" alt="Muhammed Shafin" class="profile-img">
-        <h1 class="name">Muhammed Shafin</h1>
-        <p class="title">Electrician Student | Project Manager at Pro26</p>
-      </div>
-      <div class="contact">
-        <h2>Contact Info</h2>
-        <ul>
-          <li>Email: <a href="mailto:pkshafin10@gmail.com">pkshafin10@gmail.com</a></li>
-          <li>Phone: <a href="tel:+918111874110">+91 81118 74110</a></li>
-          <li>Address: Pattakkal House, Vavoor, Cheecode (PO), Malappuram, Kerala, 673645</li>
-          <li>Date of Birth: April 23, 2003</li>
-        </ul>
-      </div>
-    </aside>
+  <header>
+    <h1>Muhammed Shafin</h1>
+    <p>Electrician Student | Project Manager at Pro26</p>
+  </header>
 
-    <section class="content">
+  <section>
+    <h2>Contact</h2>
+    <ul>
+      <li>Email: pkshafin10@gmail.com</li>
+      <li>Phone: +91 81118 74110</li>
+      <li>Address: Pattakkal House, Vavoor, Cheecode (PO), Malappuram, Kerala, 673645</li>
+      <li>Date of Birth: April 23, 2003</li>
+    </ul>
+  </section>
 
-      <section class="section">
-        <h2>Education</h2>
-        <ul>
-          <li>Electrician Course, ITI Areekode (Ongoing)</li>
-          <li>Diploma in Electronics Engineering, JDT Islam Polytechnic College (2023)</li>
-          <li>HSE in Computer Science, SSHSS Moorkanad (July 2021)</li>
-          <li>SSLC in General, SOHS Areekode (March 2019)</li>
-        </ul>
-      </section>
+  <section>
+    <h2>Education</h2>
+    <ul>
+      <li>Electrician Course - ITI Areekode (Ongoing)</li>
+      <li>Diploma in Electronics Engineering - JDT Islam Polytechnic College (2023)</li>
+      <li>HSE in Computer Science - SSHSS Moorkanad (2021)</li>
+      <li>SSLC - SOHS Areekode (2019)</li>
+    </ul>
+  </section>
 
-      <section class="section">
-        <h2>Skills</h2>
-        <ul>
-          <li>Team collaboration</li>
-          <li>Familiarity with electronic components</li>
-          <li>Designing & developing electronic circuits</li>
-          <li>Testing & troubleshooting devices</li>
-          <li>Basic programming in multiple languages</li>
-          <li>Microsoft Office proficiency</li>
-          <li>Driving license (two & four-wheeler)</li>
-          <li>Photo & video editing</li>
-        </ul>
-      </section>
+  <section>
+    <h2>Skills</h2>
+    <ul>
+      <li>Team collaboration</li>
+      <li>Designing and testing electronic circuits</li>
+      <li>Troubleshooting devices</li>
+      <li>Basic programming</li>
+      <li>Microsoft Office</li>
+      <li>Driving license (2 & 4-wheeler)</li>
+      <li>Photo & video editing</li>
+    </ul>
+  </section>
 
-      <section class="section">
-        <h2>Industrial Training</h2>
-        <ul>
-          <li>Solar system installation at National Skill Training Institute, Calicut</li>
-          <li>Bosch Rexroth automation at JDT Islam Polytechnic College</li>
-        </ul>
-      </section>
+  <section>
+    <h2>Projects & Training</h2>
+    <ul>
+      <li>Main Project: Biometric Fingerprint Attendance System</li>
+      <li>Mini Project: IoT Smart Home Automation</li>
+      <li>Seminar: Graphene</li>
+      <li>Training: Solar Installation @ NSTI Calicut</li>
+      <li>Training: Bosch Rexroth Automation @ JDT College</li>
+    </ul>
+  </section>
 
-      <section class="section">
-        <h2>Projects</h2>
-        <ul>
-          <li>Main: Biometric Fingerprint Attendance System</li>
-          <li>Mini: IoT-based Smart Home Automation</li>
-          <li>Seminar: Graphene</li>
-        </ul>
-      </section>
+  <section>
+    <h2>Languages</h2>
+    <ul>
+      <li>English: Full Professional</li>
+      <li>Malayalam: Native</li>
+      <li>Hindi & Arabic: Elementary</li>
+    </ul>
+  </section>
 
-      <section class="section">
-        <h2>Certificates</h2>
-        <ul>
-          <li>District Science Fair 2018 (Working model - A grade)</li>
-        </ul>
-      </section>
-
-      <section class="section">
-        <h2>Organizations</h2>
-        <ul>
-          <li>NCC (2018)</li>
-          <li>ASAP (2021)</li>
-          <li>Robotics Club (2023)</li>
-        </ul>
-      </section>
-
-      <section class="section">
-        <h2>Languages</h2>
-        <ul>
-          <li>English: Full Professional</li>
-          <li>Malayalam: Native</li>
-          <li>Hindi: Elementary</li>
-          <li>Arabic: Elementary</li>
-        </ul>
-      </section>
-
-      <section class="section">
-        <h2>Reference</h2>
-        <p>Dijith Kumar<br>
-        Placement Officer, JDT Islam Polytechnic College<br>
-        Phone: 9846498387</p>
-      </section>
-
-    </section>
-  </main>
+  <section>
+    <h2>Reference</h2>
+    <p>Dijith Kumar, Placement Officer, JDT Islam Polytechnic College<br>Phone: 9846498387</p>
+  </section>
 
 </body>
 </html>
